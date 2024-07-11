@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0.75rem 2.5rem;
+    border-bottom: solid 1px rgb(244 239 230)
+}
+
+a {
+    font-weight: 500;
+    cursor: pointer;
+    color: white !important;
+}
+
+.brand {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
