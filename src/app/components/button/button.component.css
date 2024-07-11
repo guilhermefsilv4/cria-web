@@ -1,0 +1,16 @@
+button {
+    display: flex;
+    align-items: center;
+    min-width: 84px;
+    max-height: 480px;
+    border: none;
+    border-radius: 30px;
+    height: 2.5rem;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.015em;
+    color: white;
+    background-color: var(--btn-green);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
