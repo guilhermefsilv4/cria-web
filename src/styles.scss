@@ -3,10 +3,12 @@
 :root {
     --btn-green: #009963;
     --background-primary: #1E1E1E;
+    --background-secondary: #1a1a1a;
 }
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
     font-size: .875rem;
     background-color: var(--background-primary) !important;
+    color: white !important;
 }

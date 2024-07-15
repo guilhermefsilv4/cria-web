@@ -1,0 +1,36 @@
+a {
+    font-weight: 500;
+    cursor: pointer;
+    color: white !important;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.list-mobile {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+@media (max-width: 576px) {
+    .list {
+        display: none !important;
+    }
+    .list-mobile {
+        display: flex !important;
+    }
+}
