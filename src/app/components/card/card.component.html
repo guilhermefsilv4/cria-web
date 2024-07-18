@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="src()" class="card-img-top" [alt]="alt()" />
+    <div class="card-body">
+        <h5 class="card-title">{{title()}}</h5>
+        <p class="card-text">
+            <ng-content></ng-content>
+        </p>
+    </div>
+</div>

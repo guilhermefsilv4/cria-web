@@ -2,20 +2,34 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 84px;
-    max-height: 480px;
+    min-width: 55%;
+    max-height: 50px;
     border: none;
     border-radius: 30px;
     height: 2.5rem;
-    padding: 16px;
+    padding: 20px;
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 0.015em;
     color: white;
     background-color: var(--btn-green);
     font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.5em;
 }
 
 button:hover {
     opacity: .9;
 }
+
+@media (max-width: 769px) {
+    button {
+        min-width: 75%;;
+    }
+}
+
+@media (min-width: 960px) {
+    button {
+        padding: 30px;
+    }
+}
+
