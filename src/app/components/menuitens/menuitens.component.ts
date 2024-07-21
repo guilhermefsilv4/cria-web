@@ -1,6 +1,6 @@
-import { Component, computed, input } from '@angular/core';
-import { ButtonComponent } from "../button/button.component";
 import { CommonModule } from '@angular/common';
+import { Component, computed, input } from '@angular/core';
+import { ButtonComponent } from '@components/button/button.component';
 
 @Component({
   selector: 'app-menuitens',

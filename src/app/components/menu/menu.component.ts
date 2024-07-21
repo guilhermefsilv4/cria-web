@@ -1,6 +1,6 @@
-import { Component, computed, signal } from '@angular/core';
-import { ButtonComponent } from "../button/button.component";
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { ButtonComponent } from "../button/button.component";
 import { MenuitensComponent } from "../menuitens/menuitens.component";
 
 @Component({
@@ -11,11 +11,4 @@ import { MenuitensComponent } from "../menuitens/menuitens.component";
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
-  menuOpen = signal(false)
-
-  getIconClass = computed(() => this.menuOpen() ? 'list-close-icon' : 'list-icon')
-
-  handleIconClick() {
-    this.menuOpen.update(open => !open)
-  }
 }
