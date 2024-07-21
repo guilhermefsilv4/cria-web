@@ -16,9 +16,10 @@
 .circle {
     width: 22.75em;
     height: 22.75em;
-    background: radial-gradient(circle, #19cd56 30%, #2c745b 70%, #0a1e11);
+    background: radial-gradient(circle, #19cd55a1 30%, #2c745b75 70%, var(--background-third));
     border-radius: 50%;
-    filter: blur(20px);
+    filter: blur(15px);
+    opacity: 0.8;
     position: absolute;
     right: 20px;
 }
@@ -36,44 +37,12 @@
     justify-content: center;
 }
 
-.title {
+.main-title {
     font-weight: bolder;
 }
 
-// @media (max-width: 575px) {
-//   .circle {
-//     position: relative;
-//   }
-//   .foto {
-//     right: 0;
-//     transform: translateX(-50%);
-//   }
-// }
-
-// @media (min-width: 575px), (max-width: 768px) {
-//     .title {
-//         font-size: 2em;
-//     }
-//     .foto,
-//     .circle,
-//     .circle-container {
-//         height: 200px;
-//         width: 200px;
-//         right: 0;
-//     }
-//     .center {
-//       align-items: center;
-//     }
-//     .circle {
-//       position: relative;
-//     }
-//     .foto {
-//       right: 30px;
-//     }
-// }
-
 @media (max-width: 576px) {
-    .title {
+    .main-title {
         font-size: 2em;
         text-align: center;
     }
@@ -97,12 +66,11 @@
         width: 300px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 65px;
     }
 }
 
 @media (min-width: 576px) {
-    .title {
+    .main-title {
         font-size: 2em;
     }
     .foto,
@@ -118,7 +86,7 @@
 }
 
 @media (min-width: 768px) {
-    .title {
+    .main-title {
         font-size: 3em;
     }
     .foto,
@@ -131,7 +99,7 @@
 }
 
 @media (min-width: 992px) {
-    .title {
+    .main-title {
         font-size: 4em;
     }
     .foto,
@@ -144,7 +112,7 @@
 }
 
 @media (min-width: 1200px) {
-    .title {
+    .main-title {
         font-size: 5.5em;
     }
     .foto,
@@ -156,7 +124,7 @@
 }
 
 @media (min-width: 1400px) {
-    .title {
+    .main-title {
         font-size: 6.5em;
     }
     .foto,

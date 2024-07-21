@@ -1,0 +1,54 @@
+:host {
+  display: block;
+  background-color: var(--background-third);
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+@media (max-width: 576px) {
+  .title {
+      font-size: 2em;
+  }
+}
+
+@media (min-width: 576px) {
+  .title {
+      font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+      font-size: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+      font-size: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+      font-size: 5.5em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+      font-size: 6.5em;
+  }
+}
