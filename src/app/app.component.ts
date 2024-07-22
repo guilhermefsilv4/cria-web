@@ -14,7 +14,7 @@ import { MainComponent } from './screens/main/main.component';
     styleUrl: './app.component.scss',
 })
 export class AppComponent {
-    slideUp = {
+    animation = {
         distance: '150%',
         origin: 'left',
         opacity: 1,
@@ -23,13 +23,13 @@ export class AppComponent {
     };
     ngOnInit() {
         ScrollReveal().reveal('.main-text', {
-            ...this.slideUp,
+            ...this.animation,
             origin: 'left',
         });
         ScrollReveal().reveal('.photo-container', {
-            ...this.slideUp,
+            ...this.animation,
             origin: 'right',
         });
-        ScrollReveal().reveal('.title', { ...this.slideUp, origin: 'bottom' });
+        ScrollReveal().reveal('.title', { ...this.animation, origin: 'bottom' });
     }
 }
