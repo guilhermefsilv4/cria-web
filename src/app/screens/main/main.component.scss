@@ -2,6 +2,7 @@
     display: block;
     height: calc(100vh - 65px);
     background-color: var(--background-third) !important;
+    overflow-x: hidden;
 }
 
 .circle-container {
