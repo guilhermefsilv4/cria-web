@@ -2,5 +2,18 @@
     <li><a>Home</a></li>
     <li><a>Portfólio</a></li>
     <li><a>Sobre</a></li>
-    <li><app-button>Contato</app-button></li>
+    @if (mobile()) {
+    <li>
+        <app-button
+            type="button"
+            data-bs-dismiss="offcanvas"
+            (click)="scrollToSection('contact')"
+            >Contato</app-button
+        >
+    </li>
+    } @else {
+    <li>
+        <app-button (click)="scrollToSection('contact')">Contato</app-button>
+    </li>
+    }
 </ul>

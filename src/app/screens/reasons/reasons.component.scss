@@ -12,19 +12,28 @@
   align-items: center;
 }
 
-.img-container {
+.circle {
   position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #009963;
   box-shadow: #009963 0px 0px 4px 1px;
   transition: all ease-in-out .3s;
 }
 
+.circle svg {
+  width: 60px; 
+  height: 60px; 
+  fill: white;
+}
+
 .card:hover {
-  .img-container {
+  .circle {
     box-shadow: #009963 0 0 15px 2px;
-    transform: scale(1.05);
   }
 }
 
@@ -41,6 +50,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
   row-gap: 20px;
 }
@@ -50,15 +60,13 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  text-align: center;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .img-fluid {
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 585px) {
-  section {
-    padding: 0 20px;
-  }
 }

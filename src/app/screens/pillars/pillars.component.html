@@ -1,27 +1,58 @@
 <section class="container">
-    <div class="d-flex pillars p-3">
+    <div class="d-flex pillars pb-5">
         <h1 class="title"><strong>Pilares</strong> para seu negócio</h1>
     </div>
-    <div class="img-pillars-container">
-        <div class="img-pillars-item">
-            <div class="img-pillars">
-                <img ngSrc="/assets/img/userexperience.png" fill placeholder />
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="/assets/img/pillars/loading520.png">
+                        <source media="(max-width:1200px)" srcset="/assets/img/pillars/loading300x200.png">
+                        <img src="/assets/img/pillars/loading420x280.png" class="img-fluid" placeholder alt="Carregamento Rápido" />
+                    </picture>
+                </div>
+                <div class="card-body flex-grow-1 d-flex flex-column">
+                    <h5 class="card-title">Carregamento <strong>rápido</strong></h5>
+                    <p class="card-text">
+                        Aumente suas conversões com páginas que <strong>carregam rapidamente</strong>, utilizamos técnicas de otimização avançadas e servidores cloud de alta performance
+                    </p>
+                </div>
             </div>
-            <h3>Teste</h3>
         </div>
-
-        <div class="img-pillars-item">
-            <div class="img-pillars">
-                <img ngSrc="/assets/img/userexperience.png" fill placeholder />
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="/assets/img/pillars/seo520.png">
+                        <source media="(max-width:1200px)" srcset="/assets/img/pillars/seo300.png">
+                        <img src="/assets/img/pillars/seo420.png" class="img-fluid" placeholder alt="Otimização de SEO" />
+                    </picture>
+                </div>
+                <div class="card-body flex-grow-1 d-flex flex-column">
+                    <h5 class="card-title">Otimização <strong>SEO</strong></h5>
+                    <p class="card-text">
+                        Realizamos as melhores práticas de SEO para aumentar a visibilidade e o ranking nos motores de busca.
+                    </p>
+                </div>
             </div>
-            <h3>Teste</h3>
         </div>
-
-        <div class="img-pillars-item">
-            <div class="img-pillars">
-                <img ngSrc="/assets/img/userexperience.png" fill placeholder />
+        <div class="col">
+            <div class="card h-100 d-flex flex-column">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="/assets/img/pillars/userexperience520.png">
+                        <source media="(max-width:1200px)" srcset="/assets/img/pillars/userexperience300.png">
+                        <img src="/assets/img/pillars/userexperience420.png" class="img-fluid" placeholder alt="Experiência do Usuário" />
+                    </picture>
+                </div>
+                <div class="card-body flex-grow-1 d-flex flex-column">
+                    <h5 class="card-title">User <strong>Experience</strong></h5>
+                    <p class="card-text">
+                        Implementamos estratégias de UX/UI Design voltadas para otimizar a experiência do usuário, aprimorando a usabilidade, facilitando a navegação e aumentando as taxas de conversão
+                    </p>
+                </div>
             </div>
-            <h3>Teste</h3>
         </div>
     </div>
 </section>

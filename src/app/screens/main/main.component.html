@@ -1,11 +1,12 @@
 <main class="container h-100">
     <div class="row h-100 align-content-center flex-column flex-sm-row row-gap-2">
         <div class="col-sm-6 col-md-8 col-lg-8 center main-text">
-            <h1 class="d-flex flex-column main-title">
+            <h1 class="d-flex flex-column" title>
                 Transforme sua <span>ideia em site.</span>
             </h1>
             <app-mainbutton
                 class="mt-3"
+                (click)="scrollToSection('pillars')"
                 >Saiba mais</app-mainbutton>
         </div>
         <div

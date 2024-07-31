@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-third) !important;
+  font-size: 1.5em;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: bolder;
+  font-size: calc(var(--font-base) * 1.5);
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+section > a {
+  text-decoration: none !important;
+}
+
+section > div {
+  margin-top: 20px;
+}
+
+section > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}

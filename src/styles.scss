@@ -2,10 +2,15 @@
 @import "./customboostrap.scss";
 
 :root {
-    --green: #009963;
+    --green: #17d492;
     --background-primary: #1e1e1e;
     --background-secondary: #1a1a1a;
     --background-third: #101728;
+    --font-base: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +19,7 @@ body {
     overflow-x: hidden;
     color: white !important;
     scroll-behavior: smooth;
+    font-size: var(--font-base);
 }
 
 strong {
@@ -22,4 +28,44 @@ strong {
 
 a:hover {
     opacity: 0.9;
+}
+
+.bold {
+    font-weight: bold;
+    color: var(--green);
+}
+
+.title {
+    font-weight: bolder;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: calc(var(--font-base) * 2);
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .title {
+        font-size: calc(var(--font-base) * 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: calc(var(--font-base) * 3);
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: calc(var(--font-base) * 3.5)
+    }
+}
+
+@media (min-width: 1400px) {
+    .title {
+        font-size: calc(var(--font-base) * 6.5)
+    }
 }
