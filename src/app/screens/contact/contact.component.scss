@@ -5,6 +5,10 @@
   height: 100vh;
   background-color: var(--background-third) !important;
   font-size: 1.5em;
+  background-image: url('/assets/img/background/image-16-9.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .brand {
@@ -41,4 +45,16 @@ section > div:first-child {
 .icons {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 600px) {
+  :host {
+    background-image: url('/assets/img/background/image-9-16.svg');
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  :host {
+    background-image: url('/assets/img/background/image-4-3.svg');
+  }
 }
