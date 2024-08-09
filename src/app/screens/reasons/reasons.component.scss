@@ -26,8 +26,8 @@
 }
 
 .circle svg {
-  width: 60px; 
-  height: 60px; 
+  width: 60px;
+  height: 60px;
   fill: white;
 }
 
@@ -69,4 +69,10 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 771px) {
+  section {
+    padding: 4em 1em;
+  }
 }
