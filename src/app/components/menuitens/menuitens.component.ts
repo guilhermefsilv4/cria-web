@@ -1,7 +1,7 @@
-import { CommonModule } from '@angular/common';
-import { Component, computed, input } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { ButtonComponent } from '@components/button/button.component';
+import { CommonModule } from "@angular/common";
+import { Component, computed, inject, input } from "@angular/core";
+import { Router, RouterModule } from "@angular/router";
+import { ButtonComponent } from "@components/button/button.component";
 
 @Component({
     selector: 'app-menuitens',
@@ -11,6 +11,8 @@ import { ButtonComponent } from '@components/button/button.component';
     styleUrl: './menuitens.component.scss',
 })
 export class MenuitensComponent {
+    router = inject(Router)
+
     mobile = input(false);
 
     getClass = computed(() =>
@@ -18,9 +20,12 @@ export class MenuitensComponent {
     );
 
     scrollToSection(section) {
-        const element = document.getElementById(section);
-        if (element) {
+        this.router.navigate(["/home"])
+        setTimeout(() => {
+          const element = document.getElementById(section);
+          if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-        }
+          }
+        })
     }
 }

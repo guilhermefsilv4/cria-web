@@ -1,19 +1,28 @@
 <ul [ngClass]="getClass()">
-    <li><a>Home</a></li>
-    <li><a>Portfólio</a></li>
-    <li><a>Sobre</a></li>
-    @if (mobile()) {
+  @if (mobile()) {
+    <li><a type="button"
+           data-bs-dismiss="offcanvas"
+           routerLink="/home">Home</a></li>
+    <li><a type="button"
+           data-bs-dismiss="offcanvas"
+           routerLink="/portfolio">Portfólio</a></li>
+    <li><a type="button"
+           data-bs-dismiss="offcanvas"
+           routerLink="/sobre">Sobre</a></li>
     <li>
-        <app-button
-            type="button"
-            data-bs-dismiss="offcanvas"
-            (click)="scrollToSection('contact')"
-            >Contato</app-button
-        >
+      <app-button
+        type="button"
+        data-bs-dismiss="offcanvas"
+        (click)="scrollToSection('contact')"
+      >Contato
+      </app-button>
     </li>
-    } @else {
+  } @else {
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/portfolio">Portfólio</a></li>
+    <li><a routerLink="/sobre">Sobre</a></li>
     <li>
-        <app-button (click)="scrollToSection('contact')">Contato</app-button>
+      <app-button (click)="scrollToSection('contact')">Contato</app-button>
     </li>
-    }
+  }
 </ul>
