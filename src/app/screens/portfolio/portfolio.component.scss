@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 65px);
+  background-color: var(--background-third) !important;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
