@@ -22,6 +22,7 @@
     "paths": {
       "@app/*": ["./src/app/*"],
       "@components/*": ["./src/app/components/*"],
+      "@screens/*": ["./src/app/screens/*"],
     },
     "lib": [
       "ES2022",
